@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ResturantApp/ResturantApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ResturnatAppData/ResturnatAppData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ResturantAppPresentation/ResturantAppPresentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ResturantAppDomain/ResturantAppDomain.xcodeproj">
+   </FileRef>
+</Workspace>
