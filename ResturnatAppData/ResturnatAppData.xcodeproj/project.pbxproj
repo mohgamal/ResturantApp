@@ -12,6 +12,9 @@
 		9C32E3A625B809AE007252E4 /* ResturnatAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C32E39825B809AD007252E4 /* ResturnatAppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C67410F25BF2A3A004C2D37 /* ResturantAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */; };
 		9C67411025BF2A3A004C2D37 /* ResturantAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C67411425BF2A82004C2D37 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67411325BF2A82004C2D37 /* CategoriesModel.swift */; };
+		9C67411B25BF2B4A004C2D37 /* LinksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67411A25BF2B4A004C2D37 /* LinksModel.swift */; };
+		9C67411E25BF2B69004C2D37 /* MetaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67411D25BF2B69004C2D37 /* MetaDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		9C32E3A325B809AE007252E4 /* ResturnatAppDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturnatAppDataTests.swift; sourceTree = "<group>"; };
 		9C32E3A525B809AE007252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResturantAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C67411325BF2A82004C2D37 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
+		9C67411A25BF2B4A004C2D37 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
+		9C67411D25BF2B69004C2D37 /* MetaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,8 @@
 		9C32E39725B809AD007252E4 /* ResturnatAppData */ = {
 			isa = PBXGroup;
 			children = (
+				9C67411625BF2B2F004C2D37 /* CommonModels */,
+				9C67411225BF2A5C004C2D37 /* Categories */,
 				9C32E39825B809AD007252E4 /* ResturnatAppData.h */,
 				9C32E39925B809AD007252E4 /* Info.plist */,
 			);
@@ -111,6 +119,23 @@
 				9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C67411225BF2A5C004C2D37 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9C67411325BF2A82004C2D37 /* CategoriesModel.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9C67411625BF2B2F004C2D37 /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C67411A25BF2B4A004C2D37 /* LinksModel.swift */,
+				9C67411D25BF2B69004C2D37 /* MetaDataModel.swift */,
+			);
+			path = CommonModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +200,7 @@
 				TargetAttributes = {
 					9C32E39425B809AD007252E4 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					9C32E39D25B809AE007252E4 = {
 						CreatedOnToolsVersion = 12.3;
@@ -222,6 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C67411E25BF2B69004C2D37 /* MetaDataModel.swift in Sources */,
+				9C67411425BF2A82004C2D37 /* CategoriesModel.swift in Sources */,
+				9C67411B25BF2B4A004C2D37 /* LinksModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +398,7 @@
 		9C32E3AA25B809AE007252E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -385,6 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohgamal.ResturnatAppData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,6 +424,7 @@
 		9C32E3AB25B809AE007252E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -417,6 +449,7 @@
 		9C32E3AD25B809AE007252E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = ResturnatAppDataTests/Info.plist;
@@ -435,6 +468,7 @@
 		9C32E3AE25B809AE007252E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = ResturnatAppDataTests/Info.plist;
