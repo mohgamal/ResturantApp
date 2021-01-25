@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LinksEntity: Codable {
+public struct LinksEntity: Codable {
     
     public let first: String?
     public let last: String?
