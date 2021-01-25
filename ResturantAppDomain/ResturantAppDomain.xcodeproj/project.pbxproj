@@ -10,6 +10,10 @@
 		9C32E37925B80954007252E4 /* ResturantAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C32E36F25B80953007252E4 /* ResturantAppDomain.framework */; };
 		9C32E37E25B80954007252E4 /* ResturantAppDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32E37D25B80954007252E4 /* ResturantAppDomainTests.swift */; };
 		9C32E38025B80954007252E4 /* ResturantAppDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C32E37225B80953007252E4 /* ResturantAppDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C6740F725BF2536004C2D37 /* CategoriesDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */; };
+		9C6740FB25BF256C004C2D37 /* CategoriesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */; };
+		9C67410025BF25DC004C2D37 /* LinksEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */; };
+		9C67410825BF267B004C2D37 /* MetaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67410725BF267B004C2D37 /* MetaDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		9C32E37825B80954007252E4 /* ResturantAppDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResturantAppDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C32E37D25B80954007252E4 /* ResturantAppDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantAppDomainTests.swift; sourceTree = "<group>"; };
 		9C32E37F25B80954007252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDomainRepoInterface.swift; sourceTree = "<group>"; };
+		9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEntity.swift; sourceTree = "<group>"; };
+		9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksEntity.swift; sourceTree = "<group>"; };
+		9C67410725BF267B004C2D37 /* MetaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		9C32E37125B80953007252E4 /* ResturantAppDomain */ = {
 			isa = PBXGroup;
 			children = (
+				9C6740FE25BF25C2004C2D37 /* CommonModels */,
+				9C6740F525BF2528004C2D37 /* Categories */,
 				9C32E37225B80953007252E4 /* ResturantAppDomain.h */,
 				9C32E37325B80953007252E4 /* Info.plist */,
 			);
@@ -84,6 +94,24 @@
 				9C32E37F25B80954007252E4 /* Info.plist */,
 			);
 			path = ResturantAppDomainTests;
+			sourceTree = "<group>";
+		};
+		9C6740F525BF2528004C2D37 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */,
+				9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9C6740FE25BF25C2004C2D37 /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */,
+				9C67410725BF267B004C2D37 /* MetaDataModel.swift */,
+			);
+			path = CommonModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +175,7 @@
 				TargetAttributes = {
 					9C32E36E25B80953007252E4 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					9C32E37725B80954007252E4 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C67410825BF267B004C2D37 /* MetaDataModel.swift in Sources */,
+				9C6740FB25BF256C004C2D37 /* CategoriesEntity.swift in Sources */,
+				9C67410025BF25DC004C2D37 /* LinksEntity.swift in Sources */,
+				9C6740F725BF2536004C2D37 /* CategoriesDomainRepoInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +374,7 @@
 		9C32E38425B80954007252E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -357,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohgamal.ResturantAppDomain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +400,7 @@
 		9C32E38525B80954007252E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -389,6 +425,7 @@
 		9C32E38725B80954007252E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = ResturantAppDomainTests/Info.plist;
@@ -407,6 +444,7 @@
 		9C32E38825B80954007252E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = ResturantAppDomainTests/Info.plist;
