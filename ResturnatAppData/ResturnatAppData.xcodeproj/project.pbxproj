@@ -10,6 +10,8 @@
 		9C32E39F25B809AE007252E4 /* ResturnatAppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C32E39525B809AD007252E4 /* ResturnatAppData.framework */; };
 		9C32E3A425B809AE007252E4 /* ResturnatAppDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32E3A325B809AE007252E4 /* ResturnatAppDataTests.swift */; };
 		9C32E3A625B809AE007252E4 /* ResturnatAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C32E39825B809AD007252E4 /* ResturnatAppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C67410F25BF2A3A004C2D37 /* ResturantAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */; };
+		9C67411025BF2A3A004C2D37 /* ResturantAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +24,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9C67411125BF2A3A004C2D37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C67411025BF2A3A004C2D37 /* ResturantAppDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9C32E39525B809AD007252E4 /* ResturnatAppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResturnatAppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C32E39825B809AD007252E4 /* ResturnatAppData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResturnatAppData.h; sourceTree = "<group>"; };
@@ -29,6 +45,7 @@
 		9C32E39E25B809AE007252E4 /* ResturnatAppDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResturnatAppDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C32E3A325B809AE007252E4 /* ResturnatAppDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturnatAppDataTests.swift; sourceTree = "<group>"; };
 		9C32E3A525B809AE007252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResturantAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C67410F25BF2A3A004C2D37 /* ResturantAppDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,7 @@
 				9C32E39725B809AD007252E4 /* ResturnatAppData */,
 				9C32E3A225B809AE007252E4 /* ResturnatAppDataTests */,
 				9C32E39625B809AD007252E4 /* Products */,
+				9C67410D25BF2A3A004C2D37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +105,14 @@
 			path = ResturnatAppDataTests;
 			sourceTree = "<group>";
 		};
+		9C67410D25BF2A3A004C2D37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -108,6 +135,7 @@
 				9C32E39125B809AD007252E4 /* Sources */,
 				9C32E39225B809AD007252E4 /* Frameworks */,
 				9C32E39325B809AD007252E4 /* Resources */,
+				9C67411125BF2A3A004C2D37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
