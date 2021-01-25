@@ -13,7 +13,7 @@
 		9C6740F725BF2536004C2D37 /* CategoriesDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */; };
 		9C6740FB25BF256C004C2D37 /* CategoriesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */; };
 		9C67410025BF25DC004C2D37 /* LinksEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */; };
-		9C67410825BF267B004C2D37 /* MetaDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67410725BF267B004C2D37 /* MetaDataModel.swift */; };
+		9C67410825BF267B004C2D37 /* MetaDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67410725BF267B004C2D37 /* MetaDataEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDomainRepoInterface.swift; sourceTree = "<group>"; };
 		9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEntity.swift; sourceTree = "<group>"; };
 		9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksEntity.swift; sourceTree = "<group>"; };
-		9C67410725BF267B004C2D37 /* MetaDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDataModel.swift; sourceTree = "<group>"; };
+		9C67410725BF267B004C2D37 /* MetaDataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDataEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */,
-				9C67410725BF267B004C2D37 /* MetaDataModel.swift */,
+				9C67410725BF267B004C2D37 /* MetaDataEntity.swift */,
 			);
 			path = CommonModels;
 			sourceTree = "<group>";
@@ -223,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C67410825BF267B004C2D37 /* MetaDataModel.swift in Sources */,
+				9C67410825BF267B004C2D37 /* MetaDataEntity.swift in Sources */,
 				9C6740FB25BF256C004C2D37 /* CategoriesEntity.swift in Sources */,
 				9C67410025BF25DC004C2D37 /* LinksEntity.swift in Sources */,
 				9C6740F725BF2536004C2D37 /* CategoriesDomainRepoInterface.swift in Sources */,

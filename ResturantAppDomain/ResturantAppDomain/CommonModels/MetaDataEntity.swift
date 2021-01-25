@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MetaDataModel: Codable {
+public struct MetaDataEntity: Codable {
     
     public let currentPage: Int?
     public let from: Int?
