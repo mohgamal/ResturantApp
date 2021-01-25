@@ -14,7 +14,7 @@ struct LinksEntity: Codable {
     public let prev: String?
     public let next: String?
     
-    public init (first: String?, last: String? prev: String?, next: String?) {
+    public init (first: String?, last: String?, prev: String?, next: String?) {
         self.first = first
         self.last = last
         self.prev = prev
