@@ -11,6 +11,7 @@
 		9C32E3A425B809AE007252E4 /* ResturnatAppDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32E3A325B809AE007252E4 /* ResturnatAppDataTests.swift */; };
 		9C32E3A625B809AE007252E4 /* ResturnatAppData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C32E39825B809AD007252E4 /* ResturnatAppData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C41775225C04247004FAEB8 /* CategoriesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41775125C04247004FAEB8 /* CategoriesRemoteDataSource.swift */; };
+		9C41775525C0443A004FAEB8 /* CategoriesDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41775425C0443A004FAEB8 /* CategoriesDataRepo.swift */; };
 		9C67410F25BF2A3A004C2D37 /* ResturantAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */; };
 		9C67411025BF2A3A004C2D37 /* ResturantAppDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C67411425BF2A82004C2D37 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67411325BF2A82004C2D37 /* CategoriesModel.swift */; };
@@ -50,6 +51,7 @@
 		9C32E3A325B809AE007252E4 /* ResturnatAppDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturnatAppDataTests.swift; sourceTree = "<group>"; };
 		9C32E3A525B809AE007252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C41775125C04247004FAEB8 /* CategoriesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRemoteDataSource.swift; sourceTree = "<group>"; };
+		9C41775425C0443A004FAEB8 /* CategoriesDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDataRepo.swift; sourceTree = "<group>"; };
 		9C67410E25BF2A3A004C2D37 /* ResturantAppDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ResturantAppDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C67411325BF2A82004C2D37 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
 		9C67411A25BF2B4A004C2D37 /* LinksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksModel.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				9C67411325BF2A82004C2D37 /* CategoriesModel.swift */,
 				9C41775125C04247004FAEB8 /* CategoriesRemoteDataSource.swift */,
+				9C41775425C0443A004FAEB8 /* CategoriesDataRepo.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C41775225C04247004FAEB8 /* CategoriesRemoteDataSource.swift in Sources */,
+				9C41775525C0443A004FAEB8 /* CategoriesDataRepo.swift in Sources */,
 				9C67411E25BF2B69004C2D37 /* MetaDataModel.swift in Sources */,
 				9C67411425BF2A82004C2D37 /* CategoriesModel.swift in Sources */,
 				9C67411B25BF2B4A004C2D37 /* LinksModel.swift in Sources */,
