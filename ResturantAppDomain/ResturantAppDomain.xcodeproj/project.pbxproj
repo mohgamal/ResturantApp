@@ -10,6 +10,7 @@
 		9C32E37925B80954007252E4 /* ResturantAppDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C32E36F25B80953007252E4 /* ResturantAppDomain.framework */; };
 		9C32E37E25B80954007252E4 /* ResturantAppDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32E37D25B80954007252E4 /* ResturantAppDomainTests.swift */; };
 		9C32E38025B80954007252E4 /* ResturantAppDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C32E37225B80953007252E4 /* ResturantAppDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C41774E25C041A8004FAEB8 /* CategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41774D25C041A8004FAEB8 /* CategoriesInteractor.swift */; };
 		9C6740F725BF2536004C2D37 /* CategoriesDomainRepoInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */; };
 		9C6740FB25BF256C004C2D37 /* CategoriesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */; };
 		9C67410025BF25DC004C2D37 /* LinksEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */; };
@@ -33,6 +34,7 @@
 		9C32E37825B80954007252E4 /* ResturantAppDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResturantAppDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C32E37D25B80954007252E4 /* ResturantAppDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantAppDomainTests.swift; sourceTree = "<group>"; };
 		9C32E37F25B80954007252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C41774D25C041A8004FAEB8 /* CategoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInteractor.swift; sourceTree = "<group>"; };
 		9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDomainRepoInterface.swift; sourceTree = "<group>"; };
 		9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesEntity.swift; sourceTree = "<group>"; };
 		9C6740FF25BF25DC004C2D37 /* LinksEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksEntity.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				9C6740F625BF2536004C2D37 /* CategoriesDomainRepoInterface.swift */,
 				9C6740FA25BF256C004C2D37 /* CategoriesEntity.swift */,
+				9C41774D25C041A8004FAEB8 /* CategoriesInteractor.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				9C6740FB25BF256C004C2D37 /* CategoriesEntity.swift in Sources */,
 				9C67410025BF25DC004C2D37 /* LinksEntity.swift in Sources */,
 				9C6740F725BF2536004C2D37 /* CategoriesDomainRepoInterface.swift in Sources */,
+				9C41774E25C041A8004FAEB8 /* CategoriesInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
