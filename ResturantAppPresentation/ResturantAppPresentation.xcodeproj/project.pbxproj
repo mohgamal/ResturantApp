@@ -10,6 +10,8 @@
 		9C32E3C525B809CC007252E4 /* ResturantAppPresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C32E3BB25B809CC007252E4 /* ResturantAppPresentation.framework */; };
 		9C32E3CA25B809CC007252E4 /* ResturantAppPresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C32E3C925B809CC007252E4 /* ResturantAppPresentationTests.swift */; };
 		9C32E3CC25B809CC007252E4 /* ResturantAppPresentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C32E3BE25B809CC007252E4 /* ResturantAppPresentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C41775D25C0463E004FAEB8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C41775B25C0463E004FAEB8 /* CategoryCell.swift */; };
+		9C41775E25C0463E004FAEB8 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C41775C25C0463E004FAEB8 /* CategoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		9C32E3C425B809CC007252E4 /* ResturantAppPresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResturantAppPresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C32E3C925B809CC007252E4 /* ResturantAppPresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantAppPresentationTests.swift; sourceTree = "<group>"; };
 		9C32E3CB25B809CC007252E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C41775B25C0463E004FAEB8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		9C41775C25C0463E004FAEB8 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		9C32E3BD25B809CC007252E4 /* ResturantAppPresentation */ = {
 			isa = PBXGroup;
 			children = (
+				9C41775725C04518004FAEB8 /* Categories */,
 				9C32E3BE25B809CC007252E4 /* ResturantAppPresentation.h */,
 				9C32E3BF25B809CC007252E4 /* Info.plist */,
 			);
@@ -84,6 +89,23 @@
 				9C32E3CB25B809CC007252E4 /* Info.plist */,
 			);
 			path = ResturantAppPresentationTests;
+			sourceTree = "<group>";
+		};
+		9C41775725C04518004FAEB8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9C41775A25C04618004FAEB8 /* CollectionViewCells */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9C41775A25C04618004FAEB8 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9C41775B25C0463E004FAEB8 /* CategoryCell.swift */,
+				9C41775C25C0463E004FAEB8 /* CategoryCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +169,7 @@
 				TargetAttributes = {
 					9C32E3BA25B809CC007252E4 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					9C32E3C325B809CC007252E4 = {
 						CreatedOnToolsVersion = 12.3;
@@ -177,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C41775E25C0463E004FAEB8 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C41775D25C0463E004FAEB8 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		9C32E3D025B809CC007252E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -357,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mohgamal.ResturantAppPresentation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +392,7 @@
 		9C32E3D125B809CC007252E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QCBY87LF55;
@@ -389,6 +417,7 @@
 		9C32E3D325B809CC007252E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = ResturantAppPresentationTests/Info.plist;
@@ -407,6 +436,7 @@
 		9C32E3D425B809CC007252E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCBY87LF55;
 				INFOPLIST_FILE = ResturantAppPresentationTests/Info.plist;
